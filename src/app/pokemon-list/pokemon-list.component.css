@@ -1,0 +1,12 @@
+.container .row .col-md-4 .card {
+    margin: 10px;
+    border: 1px solid #b61826;
+}
+
+.container .row .col-md-12 .btn {
+    margin: 10px;
+}
+
+.container .row .col-md-4 .card .card-body {
+    background-color: #b61826; 
+}

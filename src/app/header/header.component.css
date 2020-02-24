@@ -1,0 +1,20 @@
+ul {
+    background-color: #b61826;
+}
+
+ul li a {
+    font-family: 'PokemonHollow';
+    font-size: 50px;
+    color: yellow;
+}
+
+ul .dropdown {
+    position: absolute;
+    right: 58px;
+}
+
+@media (max-width:580px) {
+    ul .dropdown {
+        right: 0;
+    }
+} 
