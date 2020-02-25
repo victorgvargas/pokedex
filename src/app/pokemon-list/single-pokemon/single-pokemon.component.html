@@ -1,1 +1,19 @@
-<p>single-pokemon works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <button class="btn btn-primary" routerLink=''>Go back</button>
+        </div>
+        <div class="col-md-8">
+            <div class="card text-center" style="width: 18rem;">
+                <img 
+                    class="card-img-top" 
+                    src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{{ +pokemon.id + 1 }}.png" 
+                    alt="{{ pokemon.name }}">
+                <div class="card-body">
+                  <h5 class="card-title">{{ pokemon.name | titlecase }}</h5>
+                  <p class="card-text">The pokemon is of type {{ response.types[0].type.name }}. It has the ability {{ response.abilities[0].ability.name }}.</p>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>

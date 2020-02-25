@@ -5,7 +5,7 @@
                 <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{{ i + 1 }}.png" class="card-img-top" alt="{{ item.name }}">
                 <div class="card-body">
                   <h5 class="card-title">{{ item.name | titlecase }}</h5>
-                  <a href="#" class="btn btn-primary">See details</a>
+                  <a routerLink='/pokedex/{{ item.name }}/{{ i }}' class="btn btn-primary">See details</a>
                 </div>
               </div>
         </div>

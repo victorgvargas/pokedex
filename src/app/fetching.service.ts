@@ -12,4 +12,8 @@ export class FetchingService {
     getPokemons(offset) : Observable<any> {
         return this.http.get('https://pokeapi.co/api/v2/pokemon?offset=' +offset +'&limit=20');
     }
+
+    getSinglePokemon(name : string) : Observable<any>{
+        return this.http.get('https://pokeapi.co/api/v2/pokemon/' +name);
+    }
 }

@@ -28,4 +28,10 @@ export class PokemonListComponent implements OnInit {
       });
     })
   }
+
+  onFilter(type : number){
+    if (type === 1) {
+      
+    }
+  }
 }
